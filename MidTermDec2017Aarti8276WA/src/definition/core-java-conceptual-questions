@@ -1,0 +1,175 @@
+Please answer the below core-java Questions:
+
+Q1. What jdk contains or composed of and define each components?
+A1. JDK is Java Development Kit which is used for developing Java applications and applets. Its components are:
+        1.JRE - Java Runtime Environment is set of a software tools for development of Java application. It combines
+            the Java Virtual Machine and supporting libraries. JRE is part of JDK.
+        2.Compiler- Java compiler is a JDK tool. It reads class and interface definitions, written in Java programming
+            language and compiles them into bytecode class files.
+        3.Java Interpreter- Java interpreter is used to interpret the .class java files that have been compiled by Java
+            compiler.
+        4.Java File Generator - Java header File Generator generates C header and source files that are needed
+            to implement native methods.
+        4.Documentation generator - Java documentation helps to maintain code. It parses the declarations and
+            documentation comments in a set of Java source files and produces corresponding set of HTML pages.
+        5.Java Debugger - Jav debugger provides inspection and debugging of a local or remote Java Virtual Machine.
+
+Q2. What is IDE?
+A2. IDE is Integrated Development Environment. IDEs offers a central interface featuring all the tools a developer need
+    to write a code
+
+Q3. What are the IDEs available in the market to support java?
+A3. Intellij, Eclipse, Netbeans
+
+Q4. Explain the entire java life cycle.
+A4. Java compiler compiles the source code and converts it into bytecodes i.e. converting it into .class from .java.
+    It is then loaded into Java virtual machine(JVM) using Java loader. Inside JVM, bytecode is verified and is executed
+    using JIT(Just In Time) code generator.
+
+Q5. what is class?
+A5. Class is a blue print or template for creating different objects.
+
+Q6. What is object?
+A5. Object is an instance of class where it defines the characteristics of the class
+
+Q7. What is the entry point of an application?
+A7. Main method is the entry point of an application.
+
+Q8. Why main is static?
+A8. Static methods can be accessed without creating a class instance. Main method is entry point of an application, so
+    when it is called by the JVM, no object are made and since it is static it can be directly invoked via the class.
+
+Q9. What is the difference between an Interface and Abstract class?
+A9. Interface is blueprint of the class. Interface implicitly abstract and cannot have implementations whereas Abstract
+    class outline the methods but not necessarily implement it. Variables declared in Java Interface is by default Final
+    whereas Abstract class may contain non Final variables. A java class can implement multiple interface but it can
+    extend only one class.
+
+Q10. Can you make an Object from an Interface and Abstract class ? if not how do you use it ?
+A10. Interface and Abstract class cannot be instantiated. To make an object, class has to be a concrete class which
+     means all the methods inside the class need to be implemented. To use the Interface and Abstract class we need to
+     implement Interface and extends Abstract class and implements all its methods in the concrete class and then we can
+     use those methods by creating objects.
+
+Q11. what is Access Specifier?
+A11. Access specifier regulates access to classes, fields and methods. It determine whether a method in a class can be
+     used or invoked by another method in another class. We have three types of Access Specifier:
+        Public - can be accessed by anyone
+        Private - can be accessed only by the same class
+        Protected - can be accessed by the package and its all sub classes
+
+Q12. What is OOP ? Define each feature of java OOP.
+A12. Object Oriented Programming is a programming langauage model organized around objects rather than actions.
+    There are four OOP features:
+    -Abstraction: Abstraction is implementation hiding by showing only functionality to the users.
+    -Inheritance: Inheritance is the process by which one class acquires the properties and functionalities
+    of another class
+    -Encapsulation: Encapsulation is data hiding by restricting access to accessors and mutators.
+    -Polymorphism: Polymorphism allows to perform a single action in different ways.
+
+Q13. What is API? Name list of API that you have used so far.
+A13. API is Application Programming Interface.
+     Core Java API, Google, JMF, Android
+
+Q14. Does java support multiple inheritance?
+A14. Yes Java does support the multiple inheritance.
+
+Q15. What is method overloading and when it happens?
+A15. Method overloading allows class to have multiple methods with the same name but different signature.
+     Overloading is done only in Super class and it calls to its definition at compile time.
+
+Q16. Explain exceptions in java and how to handle it.
+A16. Exception is unwanted event that interrupts the normal flow of the program. Exceptions in Java is handled by using
+    'try-catch' block or by using 'throws Exception' in main method.
+
+Q17. What is static keyword in java? How it has been used in variables and methods ?
+A17. Static keyword belongs to class and is not associated with an instance of a class. When static used in variables
+     and methods then they can be accessed within same class without creating any object.
+
+Q18. What is final and how it has been used variables and methods?
+A18. Final is a keyword which is used to specify that its value cannot be changed.
+     When final is used with variable then that variable value cannot be changed after it is initialized.
+     When final is used with method then that method cannot be overridden.
+
+Q19. What is final, finally and finalize?
+A19. -Final is a keyword which is used with variables to specify that its value cannot be change
+     -Finally is used to place important code which is executed irrespective of execution of exception. Finally is placed
+      after the try and catch block and is always executed whether exception is handled or not
+     -Finalize is used to perform clean up processing just before garbage collection.
+
+Q20. What is a constructor ?
+A20. Constructor is similar to a method which doesn't return anything and is called when an instance of an object is
+     created. Name of the constructor must be same as of the class.
+
+Q21. What is "this" keyword in java ?
+A21. 'this' keyword is used to refer current class instance variable.
+
+Q22. What is "super" keyword in java?
+A22. 'super' keyword is used in a sub class method to call a method defined in the super class. Only public and
+     protected method can be called by the super keyword.
+
+Q23. What is JVM stand for ?
+A23. JVM is Java Virtual Machine
+
+Q24. What version of java are you using?
+A24. I am using Javs 1.8
+
+Q25. What is JAR stand for ?
+A25. Java Archive
+
+Q26. What is compile time and run time?
+A26. Compiler compile the code into machine language(bytcode in case of Java) and this compilation process is referred as a
+     compile time. When the compiled program is executed and running then it is referred as run time.
+
+Q27. What is heap?
+A27. Heap is amount of memory allocated to store objects.
+
+Q28. How java manage it's memory?
+A28. Memory alloaction is divided in Heap and Stack. Local variables stores in stack whereas other data variables get
+     stored in heap. In stack, memory is allocated at method invocation time and deallocated when method returns.
+     where in heap memory once allocated is never explicitly deallocated.
+
+Q29. What is the difference between String, StringBuffer and StringBuilder?
+    -String is immutable that means we cannot alter its value.
+    -StringBuffer is mutable and object created through StringBuffer is stored in the heap and each method is
+     synchronized
+    -StringBuilder is also mutable like StringBuffer but not synchronized.
+
+Q30. What is Singleton class?
+A30. Singleton class limits the creation of object to only one.
+
+Q31. What is Serialization and Deserialization?
+A31. Process of converting an object into bytes is called serialization. Deserialization is the reverse process of
+     creating object from bytes.
+
+Q32. Which one will take more memory, an int or Integer?
+A32. They bothe take same space, 4 bytes
+
+Q33. Why is String Immutable in Java?
+A33. String is designed to be immutable in Java for efficiency and security reasons. Immutable objects can be shared
+     among multiple threads without synchronization.
+
+Q34. What is constructor chaining in Java?
+A34. Constructor chaining is calling one constructor from another constructor with respect to current object
+
+Q35. The difference between Serial and Parallel Garbage Collector?
+A35. Serial Garbage Collector is a default copying collector which uses only one thread for garbage collection
+     operation whereas Parallel Garbage Collector uses multiple thread for the garbage collection operation.
+
+Q36. What is JIT stands for?
+A36. JIT - Just In Time
+
+Q37. Explain Java Heap space and Garbage collection?
+A37. Garbage collection is the process in which Java Virtual Machine periodically checks objects which are not being used and discard those unused objects and
+     clear the memory for reuse again.
+     Java Heap space - After garbage collection the unused objects are pushed to Java Heap Space where it remain forever
+     indefinitely
+
+Q38. Can you guarantee the garbage collection process?
+A38. Yes, we can as JVM in Java do garbage collection periodically as its integral part.
+
+Q39. What is the difference between stack and heap in Java?
+A39. -Objects are always stored in the Heap whereas Stack memory has the reference of the object.
+     - Stack is used for static memory allocation whereas Heap is for dynamic memory allocation
+
+
