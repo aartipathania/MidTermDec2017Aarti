@@ -44,6 +44,7 @@ public class FortuneEmployee {
 		employee5.setSalary(7500);
 		employee5.calculateSalary(employee5.getSalary());
 
+		//Displaying Company intro and Vission and mission
 		employee1.describeCompany();
 		employee1.describeCompany(mission, vision);
 
@@ -58,8 +59,10 @@ public class FortuneEmployee {
 		employee4.setPerformance(1);
 		double bonus105 = employee4.calculateEmployeeBonus(employee5.getSalary(), employee5.getPerformance());
 
+		//Displaying employee pension
 		EmployeeInfo.calculateEmployeePension(employee1.getSalary());
 
+		//Creating Map to store employee data in database
 		Map<Integer, List<Object>> employeeInfo = new HashMap<Integer, List<Object>>();
 		List<Object> employeeRecord101 = new ArrayList<Object>();
 		employeeRecord101.add(employee1.employeeName());
@@ -86,6 +89,7 @@ public class FortuneEmployee {
 		employeeRecord105.add(employee5.calculateSalary(employee5.getSalary()));
 		employeeRecord105.add(bonus105);
 
+		//Adding data to Map
 		employeeInfo.put(101, employeeRecord101);
 		employeeInfo.put(102, employeeRecord102);
 		employeeInfo.put(103, employeeRecord103);
@@ -93,9 +97,10 @@ public class FortuneEmployee {
 		employeeInfo.put(105, employeeRecord105);
 
 		ConnectDB connectDB = new ConnectDB();
-
+		//Creating table, employee_record in Mysql
 		connectDB.createTableFromStringToMySql("employee_record", "employee_id", "employee_info");
 
+		//inserting data into employee_record
 		for (Integer obj : employeeInfo.keySet()) {
 			for (Object obj1 : employeeInfo.get(obj)) {
 				System.out.println(obj1);
